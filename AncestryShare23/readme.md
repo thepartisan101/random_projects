@@ -27,3 +27,4 @@ terminal)
 - [ ] Convert script into executable file with all libraries needed, no need for Python and dependencies installation.
 - [ ] Execute with minimized window?
 - [ ] Create Firefox variant.
+- [ ] Transform workflow to asynchronous using Scrapy
