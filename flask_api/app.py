@@ -19,7 +19,7 @@ users = [
         "name": "Jass",
         "age": 22,
         "occupation": "Web Developer"
-    },
+    }
 ]
 
 class User(Resource):
