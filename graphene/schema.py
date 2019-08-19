@@ -10,9 +10,10 @@ def extract(url):
 
 class Website(graphene.ObjectType):
     url = graphene.String(required=True)
-    title = graphene.string()
+    title = graphene.String()
     description = graphene.String()
     image = graphene.String()
+    feed = graphene.String()
 
 class Query(graphene.ObjectType):
     website = graphene.Field(Website, url=graphene.String())
@@ -22,6 +23,7 @@ class Query(graphene.ObjectType):
         return Website(url=url,
                         title=extracted.title,
                         description=extracted.description,
-                        image=extracted.image)
+                        image=extracted.image,
+                        feed=extracted.feed)
 
 schema = graphene.Schema(query=Query)
